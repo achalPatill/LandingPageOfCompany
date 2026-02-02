@@ -1345,12 +1345,16 @@ section {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 
 .feature-card-large {
     background: var(--bg-card);
+    
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
@@ -1438,7 +1442,16 @@ section {
 .products-showcase {
     background: var(--bg-card);
     border-bottom: 1px solid var(--border-color);
+
 }
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* Contact Page Styles */
 .contact-who {
@@ -1528,44 +1541,64 @@ section {
 
 /* FAQ Section */
 .faq-section {
-    background: var(--bg-card);
-    border-bottom: 1px solid var(--border-color);
+  background: #d9d9d9;
+  padding: 60px 0;
 }
 
-.faq-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.section-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 40px;
 }
 
-.faq-card {
-    background: var(--bg-dark);
-    padding: 2rem;
-    border-radius: 10px;
-    border-left: 4px solid var(--accent-teal);
-    transition: all 0.3s ease;
+.faq-item {
+  background: #cfcfcf;
+  margin-bottom: 12px;
 }
 
-.faq-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 212, 170, 0.2);
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 18px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
-.faq-card h3 {
-    color: var(--accent-teal);
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+.faq-question i {
+  margin-right: 8px;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 20px 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.icon {
+  font-size: 22px;
+}
+
+.product-icon{
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: #4981ad;
+    border-radius: 14px;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 1rem;
 }
-
-.faq-card h3 i {
-    font-size: 1.5rem;
-}
-
-.faq-card p {
-    color: var(--text-muted);
-    line-height: 1.6;
-    font-size: 0.95rem;
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
