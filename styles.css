@@ -421,7 +421,7 @@ section {
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
+   
     border-color: var(--primary-color);
     box-shadow: 0 8px 30px var(--shadow-hover);
 }
@@ -526,7 +526,7 @@ section {
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
+  
     box-shadow: 0 8px 30px var(--shadow-hover);
     border-color: var(--primary-color);
 }
@@ -637,7 +637,7 @@ section {
 }
 
 .testimonial-card:hover {
-    transform: translateY(-5px);
+    
     box-shadow: 0 8px 30px rgba(0, 212, 170, 0.2);
 }
 
@@ -850,7 +850,7 @@ section {
 .social-links a:hover {
     background: var(--accent-teal);
     color: var(--primary-dark);
-    transform: translateY(-3px);
+    
     box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
 }
 
@@ -1056,7 +1056,7 @@ section {
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    
     box-shadow: 0 8px 30px rgba(0, 212, 170, 0.2);
     border-color: var(--accent-teal);
 }
@@ -1178,7 +1178,7 @@ section {
 }
 
 .who-item:hover {
-    transform: translateY(-5px);
+    
     border-color: var(--accent-teal);
     box-shadow: 0 8px 30px rgba(0, 212, 170, 0.2);
 }
@@ -1239,7 +1239,7 @@ section {
 }
 
 .reliability-card:hover {
-    transform: translateY(-5px);
+    
     border-color: var(--accent-teal);
     box-shadow: 0 8px 30px rgba(0, 212, 170, 0.2);
 }
@@ -1295,7 +1295,7 @@ section {
 }
 
 .value-item:hover {
-    transform: translateY(-5px);
+    
     border-color: var(--accent-teal);
     box-shadow: 0 8px 30px rgba(0, 212, 170, 0.2);
 }
@@ -1363,7 +1363,7 @@ section {
 }
 
 .feature-card-large:hover {
-    transform: translateY(-5px);
+    
     border-color: var(--accent-teal);
     box-shadow: 0 8px 30px rgba(0, 212, 170, 0.2);
 }
@@ -1475,7 +1475,7 @@ section {
 }
 
 .who-contact-item:hover {
-    transform: translateY(-5px);
+
     border-color: var(--accent-teal);
     box-shadow: 0 8px 30px rgba(0, 212, 170, 0.2);
 }
@@ -1540,30 +1540,46 @@ section {
 }
 
 /* FAQ Section */
+/* FAQ SECTION */
+/* ===== FAQ SECTION (WHITE STYLE) ===== */
 .faq-section {
-  background: #d9d9d9;
-  padding: 60px 0;
+  background: #ffffff;
+  padding: 80px 0;
 }
 
-.section-title {
+.faq-section .section-title {
   text-align: center;
-  font-size: 48px;
-  font-weight: 300;
-  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
 }
 
+.faq-section .section-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 50px;
+}
+
+/* FAQ ITEM */
 .faq-item {
-  background: #cfcfcf;
-  margin-bottom: 12px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+  overflow: hidden;
 }
 
+/* QUESTION */
 .faq-question {
   width: 100%;
-  background: none;
+  background: transparent;
   border: none;
-  padding: 18px 20px;
+  padding: 20px 24px;
   font-size: 16px;
   font-weight: 600;
+  color: #111827;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1571,34 +1587,105 @@ section {
 }
 
 .faq-question i {
-  margin-right: 8px;
+  color: #2563eb;
+  margin-right: 10px;
 }
 
+/* ICON */
+.icon {
+  font-size: 18px;
+  color: #6b7280;
+  transition: transform 0.3s ease;
+}
+
+/* ANSWER */
 .faq-answer {
   display: none;
-  padding: 0 20px 20px;
-  font-size: 14px;
-  color: #333;
+  padding: 0 24px 20px;
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 15px;
 }
 
-.icon {
-  font-size: 22px;
+/* OPEN STATE */
+.faq-item.active .faq-answer {
+  display: block;
 }
 
-.product-icon{
-    width: 40px;
-    height: 40px;
-    background: white;
-    color: #4981ad;
-    border-radius: 14px;
+.faq-item.active .icon {
+  transform: rotate(180deg);
+}
+/* =========================
+   ABOUT SECTION – IMAGE LAYOUT
+========================= */
+
+/* =========================
+   ABOUT IMAGE – SCROLLS WITH CONTENT
+========================= */
+.about-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* Image container */
+.about-media {
+    position: relative; /* NOT sticky or fixed */
+}
+
+/* Image itself */
+.about-media img {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.15);
+    display: block;
+}
+@media (max-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-media img {
+        max-height: none;
+    }
+}
+/* =========================
+   CONTACT DETAILS – 2 PER ROW
+========================= */
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 2rem;
+}
+
+/* Ensure cards align nicely */
+.contact-item {
+    margin-bottom: 0; /* remove vertical stacking gap */
+    align-items: center;
+}
+
+/* Icon alignment consistency */
+.contact-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(14, 165, 233, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
-    margin-bottom: 1rem;
 }
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+
+/* Mobile: 1 per row */
+@media (max-width: 768px) {
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
 }
+

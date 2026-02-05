@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
@@ -30,6 +29,7 @@
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <section class="page-hero">
         <div class="container">
             <h1>Our Products & Services</h1>
@@ -37,12 +37,20 @@
         </div>
     </section>
 
+    <!-- JAVACP SECTION -->
     <section id="javacp" class="javacp-section">
         <div class="container">
             <div class="javacp-header">
                 <h2 class="section-title">JavaCP – Dedicated Tomcat for cPanel</h2>
-                <p class="section-intro">JavaCP is a professional cPanel plugin that allows hosting providers to run Apache Tomcat under individual cPanel accounts.</p>
-                <p>Unlike traditional shared Java setups, JavaCP ensures each user gets their own Tomcat instance, resulting in better performance, security, and isolation.</p>
+                <p class="section-intro">
+                    JavaCP is a professional cPanel plugin that allows hosting providers 
+                    to run Apache Tomcat under individual cPanel accounts.
+                </p>
+                <p>
+                    Unlike traditional shared Java setups, JavaCP ensures each user gets 
+                    their own Tomcat instance, resulting in better performance, security, 
+                    and isolation.
+                </p>
             </div>
 
             <div class="javacp-features">
@@ -51,37 +59,63 @@
                     <div class="feature-card-large">
                         <div class="feature-icon-large"><i class="fas fa-server"></i></div>
                         <h3>Dedicated Tomcat per User</h3>
-                        <p>Each cPanel account runs its own Tomcat service — no shared ports, no cross-user impact. This ensures complete isolation and optimal performance for each user.</p>
+                        <p>
+                            Each cPanel account runs its own Tomcat service — no shared ports, 
+                            no cross-user impact. This ensures complete isolation and optimal 
+                            performance for each user.
+                        </p>
                     </div>
+
                     <div class="feature-card-large">
                         <div class="feature-icon-large"><i class="fas fa-code-branch"></i></div>
                         <h3>Java Version Selection</h3>
-                        <p>Users can choose and manage supported Java versions directly from the cPanel UI. Full control over Java and Tomcat versions without server-level access.</p>
+                        <p>
+                            Users can choose and manage supported Java versions directly 
+                            from the cPanel UI. Full control over Java and Tomcat versions 
+                            without server-level access.
+                        </p>
                     </div>
+
                     <div class="feature-card-large">
                         <div class="feature-icon-large"><i class="fas fa-memory"></i></div>
                         <h3>JVM Memory Management</h3>
-                        <p>Configure Java heap size (Xms / Xmx) safely without server-level access. UI-based service management for complete control over memory allocation.</p>
+                        <p>
+                            Configure Java heap size (Xms / Xmx) safely without server-level 
+                            access. UI-based service management for complete control over memory allocation.
+                        </p>
                     </div>
+
                     <div class="feature-card-large">
                         <div class="feature-icon-large"><i class="fas fa-tags"></i></div>
                         <h3>Tomcat Version Control</h3>
-                        <p>Install and manage the Tomcat version that best suits the application. Easy version switching and management through the cPanel interface.</p>
+                        <p>
+                            Install and manage the Tomcat version that best suits the application. 
+                            Easy version switching and management through the cPanel interface.
+                        </p>
                     </div>
+
                     <div class="feature-card-large">
                         <div class="feature-icon-large"><i class="fas fa-play-circle"></i></div>
                         <h3>Start / Stop / Restart via UI</h3>
-                        <p>No SSH required — full Tomcat lifecycle management from cPanel. Start, stop, and restart services with a simple click.</p>
+                        <p>
+                            No SSH required — full Tomcat lifecycle management from cPanel. 
+                            Start, stop, and restart services with a simple click.
+                        </p>
                     </div>
+
                     <div class="feature-card-large">
                         <div class="feature-icon-large"><i class="fas fa-globe"></i></div>
                         <h3>Domain & Subdomain Mapping</h3>
-                        <p>Flexible mapping options allow running Java web applications via Tomcat and using standard cPanel hosting (HTML, JS, PHP) on the same account. Perfect for hybrid hosting environments.</p>
+                        <p>
+                            Flexible mapping options allow running Java web applications via Tomcat 
+                            and using standard cPanel hosting (HTML, JS, PHP) on the same account. 
+                            Perfect for hybrid hosting environments.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="javacp-benefits">
+            <div class="benefits-highlight">
                 <h3>Why Hosting Providers Choose JavaCP</h3>
                 <div class="benefits-grid">
                     <div class="benefit-item">
@@ -96,57 +130,76 @@
                         <i class="fas fa-check-circle"></i>
                         <span>Familiar cPanel workflow</span>
                     </div>
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Enterprise-like Java hosting on shared platforms</span>
-                    </div>
                 </div>
-                <p class="benefits-conclusion"><strong>JavaCP enables you to offer Java hosting as a premium service with confidence.</strong></p>
+                <p class="benefits-conclusion">
+                    <strong>JavaCP enables you to offer Java hosting as a premium service with confidence.</strong>
+                </p>
             </div>
         </div>
     </section>
 
-    <section id="products-showcase" class="products-showcase">
-    <div class="container">
-        <h2 class="section-title">Product Highlights</h2>
+    <!-- FAQ SECTION -->
+    <section id="faq-contact" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">FAQ</h2>
 
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-icon">
-                    <i class="fas fa-server"></i>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span><i class="fas fa-question-circle"></i> What is JavaCP?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        JavaCP is a professional cPanel plugin that allows hosting providers 
+                        to run Apache Tomcat under individual cPanel accounts with dedicated 
+                        instances per user.
+                    </p>
                 </div>
-                <h3>Dedicated Tomcat per User</h3>
-                <p>Each cPanel account runs its own Tomcat service — no shared ports, no cross-user impact.</p>
             </div>
 
-            <div class="product-card">
-                <div class="product-icon">
-                    <i class="fas fa-code-branch"></i>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span><i class="fas fa-question-circle"></i> How does JavaCP differ from shared Java hosting?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Unlike traditional shared Java setups, JavaCP ensures each user gets 
+                        their own Tomcat instance, resulting in better performance, security, 
+                        and isolation.
+                    </p>
                 </div>
-                <h3>Java Version Selection</h3>
-                <p>Users can choose and manage supported Java versions directly from the cPanel UI.</p>
             </div>
 
-            <div class="product-card">
-                <div class="product-icon">
-                    <i class="fas fa-memory"></i>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span><i class="fas fa-question-circle"></i> Do I need SSH access to manage JavaCP?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        No SSH required — full Tomcat lifecycle management (start/stop/restart) 
+                        is available directly from the cPanel UI.
+                    </p>
                 </div>
-                <h3>JVM Memory Management</h3>
-                <p>Configure Java heap size (Xms / Xmx) safely without server-level access.</p>
             </div>
 
-            <div class="product-card">
-                <div class="product-icon">
-                    <i class="fas fa-globe"></i>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span><i class="fas fa-question-circle"></i> Can I use JavaCP with standard hosting?</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes, JavaCP supports flexible domain mapping, allowing you to run Java 
+                        applications via Tomcat alongside standard cPanel hosting.
+                    </p>
                 </div>
-                <h3>Domain & Subdomain Mapping</h3>
-                <p>Flexible mapping options allow running Java web applications via Tomcat.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -188,5 +241,34 @@
             </div>
         </div>
     </footer>
+
+    <!-- JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqItems = document.querySelectorAll(".faq-item");
+
+            faqItems.forEach((item, index) => {
+                const question = item.querySelector(".faq-question");
+                const answer = item.querySelector(".faq-answer");
+                const icon = item.querySelector(".icon");
+
+                // First open by default
+                if (index === 0) {
+                    answer.style.display = "block";
+                    icon.textContent = "−";
+                }
+
+                question.addEventListener("click", () => {
+                    faqItems.forEach(i => {
+                        i.querySelector(".faq-answer").style.display = "none";
+                        i.querySelector(".icon").textContent = "+";
+                    });
+
+                    answer.style.display = "block";
+                    icon.textContent = "−";
+                });
+            });
+        });
+    </script>
 </body>
 </html>
