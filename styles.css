@@ -58,7 +58,7 @@ body {
 }
 
 .nav-brand h2 {
-    color: var(--primary-color);
+    color: var(--accent-teal);
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -309,14 +309,14 @@ section {
 }
 
 .about-text h3 {
-    color: var(--primary-color);
+    color: var(--accent-teal);
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
 .about-text strong {
-    color: var(--primary-color);
+    color: var(--accent-teal);
 }
 
 .expertise-list {
@@ -786,7 +786,7 @@ section {
 .footer-section h3 {
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--accent-teal);
 }
 
 .footer-section p {
@@ -1587,7 +1587,7 @@ section {
 }
 
 .faq-question i {
-  color: #2563eb;
+  color: var(--accent-teal);
   margin-right: 10px;
 }
 
@@ -1686,6 +1686,95 @@ section {
 @media (max-width: 768px) {
     .contact-details {
         grid-template-columns: 1fr;
+    }
+}
+/* ===============================
+   ABOUT – MEGABIT LAB
+================================ */
+
+.about-megabit {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.about-wrap {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+/* Main section title */
+.about-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0e7490;
+    margin-bottom: 24px;
+}
+
+/* Intro paragraph */
+.about-intro {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #1f2937;
+    margin-bottom: 14px;
+}
+
+.about-company {
+    color: #0284c7;
+    font-weight: 600;
+}
+
+/* Normal body text */
+.about-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 32px;
+}
+
+/* Subheadings */
+.about-subtitle {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0e7490;
+    margin-bottom: 16px;
+}
+
+/* Expertise list */
+.about-expertise {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.about-expertise li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 14px;
+    font-size: 1rem;
+    color: #374151;
+}
+
+/* Custom bullet */
+.about-expertise li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #0284c7;
+    font-size: 1rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .about-megabit {
+        padding: 60px 16px;
+    }
+
+    .about-title {
+        font-size: 1.9rem;
+    }
+
+    .about-subtitle {
+        font-size: 1.4rem;
     }
 }
 
