@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fix File Permissions Tool | Megabit Lab</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="docs.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <div class="nav-brand">
+      <h2>Megabit Lab</h2>
+    </div>
+
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+
+      <li class="nav-item dropdown">
+        <a href="#" class="dropdown-toggle">
+          Products <i class="fas fa-chevron-down"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="products.html">JavaCP</a></li>
+          <li><a href="fix-file-permissions.html" class="active">
+             Fix File Permissions Tool
+          </a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- =============== END NAVBAR =============== -->
+
+
+<!-- ================= HERO ================= -->
+<section class="page-hero">
+  <div class="container text-center">
+    
+    <h1> Fix File Permissions Tool</h1>
+    <p>
+      Automatically scan and fix file & folder permissions in your cPanel account —
+      safely, accurately, and with a single click.
+    </p>
+  </div>
+</section>
+
+
+<!-- ================= CONTENT ================= -->
+<section class="features">
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="info-box">
+      <h2> What Is This Tool?</h2>
+      <p>
+        The <strong>Fix File Permissions Tool</strong> is a built-in cPanel utility
+        that automatically detects and corrects incorrect permissions for website,
+        email, and system files.
+      </p>
+    </div>
+
+    <!-- Why -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Is This Tool Needed ?</h2>
+            <div class="features-grid">
+            
+    
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <h3>Fixes Common Website Errors</h3>
+                    <p>Incorrect file permissions often cause 403 Forbidden and 500 Internal Server Errors.
+This tool automatically corrects permissions to restore normal website functionality.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-building"></i></div>
+                    <h3>Improves Security</h3>
+                    <p>Over-permissive files can expose sensitive data.
+The tool enforces safe permission rules to protect files while keeping the site accessible</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-link"></i></div>
+                    <h3>Ensures Email Reliability</h3>
+                    <p>Wrong permissions can break email delivery and mailboxes.
+The tool restores correct mail directory permissions to keep email services working smoothly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Saves Time & Effort</h3>
+                    <p>Manually fixing permissions is risky and time-consuming.
+With one click, the tool scans and fixes everything automatically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- What it fixes -->
+    
+    <!-- After Fix -->
+    <div class="info-box success">
+      <h2>🔁 What Happens After Fixing?</h2>
+      <ul class="icon-list success">
+        <li><i class="fas fa-check-circle"></i> Website loads correctly</li>
+        <li><i class="fas fa-check-circle"></i> Email works normally</li>
+        <li><i class="fas fa-check-circle"></i> Files remain secure</li>
+        <li><i class="fas fa-check-circle"></i> Permission errors resolved</li>
+      </ul>
+    </div>
+
+    <section id="javacp-intro" class="javacp-intro">
+        <div class="container">
+            <div class="javacp-content">
+                <div class="javacp-text">
+                    <h2>Fix File Permissions Tool-
+Automatically scan and fix file & folder permissions in your cPanel account </h2>
+                    <p>What Does This Tool Fix?
+</p>
+                    <p>The tool scans and fixes permissions for:
+</p>
+                    <ul class="javacp-list">
+                        <li><i class="fas fa-check-circle"></i> Websites Files</li>
+                        <li><i class="fas fa-check-circle"></i> Email Files</li>
+                        <li><i class="fas fa-check-circle"></i> System Configuration</li>
+                        
+                    </ul>
+                    <p class="javacp-highlight"><strong>All fixes happen safely with a single click.
+</strong></p>
+                    
+
+                </div>
+                <div class="javacp-image">
+                    <img 
+                        src="https://media.istockphoto.com/id/2223209584/photo/businessman-using-computer-to-record-document-management-concept-online-document-database-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=f3Ho_cQjcef0J0CEwFAwBa7O2lP3_ANan_cdS5Zqc2I="
+                        alt="JavaCP cPanel Plugin"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class ="doc-section">
+  <div class = "container">
+    <div class="doc-content">
+      <h2 class="doc-heading">DOCROOT Directory Permissions</h2>
+  <p>
+    The document root directory itself is set to permission <strong>0750</strong>.
+  </p>
+
+  <p>This means:</p>
+  <ul>
+    <li>Owner has full access (read, write, execute)</li>
+    <li>Group can read and execute</li>
+    <li>Others have no access</li>
+  </ul>
+
+  <p>
+    <strong>Why this is important:</strong><br>
+    This prevents unauthorized users on the server from listing or accessing your website’s
+    root directory, while still allowing the web server (which runs under the group) to
+    serve the site correctly.
+  </p>
+
+  <!-- SUBDIRECTORIES -->
+  <h3 class="doc-heading">Subdirectories Inside DOCROOT – 0755</h3>
+  <p>
+    All normal directories inside the document root use permission <strong>0755</strong>.
+  </p>
+
+  <p>This means:</p>
+  <ul>
+    <li>Owner has full access</li>
+    <li>Group and others can read and execute (but not write)</li>
+  </ul>
+
+  <p>
+    <strong>Why this is required:</strong><br>
+    Directories must be executable to allow file access through the web server.
+    This ensures the website works normally while preventing unauthorized modification.
+  </p>
+
+  <!-- FILES -->
+  <h3 class="doc-heading">Files Inside DOCROOT – 0644</h3>
+  <p>
+    All files inside the document root are set to permission <strong>0644</strong>.
+  </p>
+
+  <p>This means:</p>
+  <ul>
+    <li>Owner can read and write</li>
+    <li>Group and others can only read</li>
+  </ul>
+
+  <p>
+    <strong>Why this is safe:</strong><br>
+    The web server requires read access to files such as HTML, PHP, and images.
+    Write access is restricted to the owner, preventing unauthorized changes.
+  </p>
+
+  <!-- MULTI DOMAIN -->
+  <h3 class="doc-heading">Multiple Domains & Subdomains</h3>
+  <p>
+    If the account contains a main domain, addon domains, or subdomains, each domain’s
+    document root is handled separately but follows the same permission rules:
+  </p>
+
+  <ul>
+    <li>DOCROOT directory → 0750</li>
+    <li>Subdirectories → 0755</li>
+    <li>Files → 0644</li>
+  </ul>
+
+  <p>
+    This ensures security and consistency across all hosted websites.
+  </p>
+
+  <!-- MAIL -->
+  <h2 class="doc-heading">Mail Directory Permission Rule</h2>
+  <p>
+    The main mail directory must have permission <strong>0751</strong>.
+  </p>
+
+  <p>This allows:</p>
+  <ul>
+    <li>Owner → full access (read, write, execute)</li>
+    <li>Group → read and execute</li>
+    <li>Others → execute only (required for mail services)</li>
+  </ul>
+
+  <p>
+    Each domain and user folder inside the mail directory also uses <strong>0751</strong>,
+    ensuring mail services can function while keeping files protected.
+  </p>
+
+  <!-- MAIL FILES -->
+  <h3 class="doc-heading">Mail Files – 0640</h3>
+  <p>
+    All regular files inside mail folders use permission <strong>0640</strong>.
+  </p>
+
+  <ul>
+    <li>Owner can read and write</li>
+    <li>Group can read</li>
+    <li>Others have no access</li>
+  </ul>
+
+  <!-- MAILDIRSIZE -->
+  <h3 class="doc-heading">Special File – maildirsize</h3>
+  <p>
+    Path: <code>/mail/domain/user/maildirsize</code><br>
+    Permission: <strong>0600</strong>
+  </p>
+
+  <p>
+    Only the owner can read and write this file. No group or public access is allowed.
+    This file controls mailbox size limits and must remain strictly protected.
+  </p>
+
+  <!-- ETC -->
+  <h2 class="doc-heading">ETC Directory Permissions</h2>
+  <p>
+    The <code>/etc</code> directory inside a cPanel user’s home folder stores critical
+    email configuration files such as routing settings and account controls.
+  </p>
+
+  <p>
+    The root <code>/etc</code> directory uses permission <strong>0750</strong>, allowing
+    access only to the account owner and required mail services.
+  </p>
+
+  <p>
+    Subdirectories inside <code>/etc</code> also use <strong>0750</strong>, while files
+    use <strong>0640</strong>, ensuring sensitive data is never publicly accessible.
+  </p>
+
+  <p>
+    <strong>Why these permissions are required:</strong>
+  </p>
+  <ul>
+    <li>Prevents unauthorized access</li>
+    <li>Ensures stable mail delivery</li>
+    <li>Meets cPanel security standards</li>
+  </ul>
+
+  <!-- EXCLUDE -->
+  <h3 class="doc-heading">Exclude Files & Folders</h3>
+  <p>
+    The Exclude feature allows you to skip specific paths during permission scans
+    and fixes.
+  </p>
+
+  <p>
+    Excluded paths are stored in:
+    <code>/home/USERNAME/.permission_exclude.txt</code>
+  </p>
+
+  <p>
+    Any excluded item will not be scanned, listed, or modified.
+  </p>
+
+  <h3 class="doc-subheading">Adding an Exclude</h3>
+  <ol>
+    <li>Open Exclude Files / Folders</li>
+    <li>Enter the relative path</li>
+    <li>Click Add</li>
+  </ol>
+
+  <h3 class="doc-subheading">Removing an Exclude</h3>
+  <ol>
+    <li>Select paths using checkboxes</li>
+    <li>Click Remove Selected</li>
+    <li>The path is deleted from the list</li>
+  </ol>
+
+
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+</section>
+    
+
+  
+
+
+      
+
+
+    <!-- Permission Rules -->
+    <div class="info-box">
+      <h2> Permission Rules Applied</h2>
+
+      <table class="permission-table">
+        <tr>
+          <th>Location</th>
+          <th>Permission</th>
+        </tr>
+        <tr>
+          <td>DOCROOT directory</td>
+          <td>0750</td>
+        </tr>
+        <tr>
+          <td>Subdirectories</td>
+          <td>0755</td>
+        </tr>
+        <tr>
+          <td>Files</td>
+          <td>0644</td>
+        </tr>
+        <tr>
+          <td>Mail directory</td>
+          <td>0751</td>
+        </tr>
+        <tr>
+          <td>Mail files</td>
+          <td>0640</td>
+        </tr>
+        <tr>
+          <td>maildirsize</td>
+          <td>0600</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Exclude -->
+    
+
+    <!-- Notes -->
+    
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>
+        &copy; 2024 Megabit Lab – Mediastroke Web Services Private Limited.
+        All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Global JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

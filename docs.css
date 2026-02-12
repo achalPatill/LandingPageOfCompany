@@ -1,0 +1,97 @@
+/* ===============================
+   Documentation Section
+================================ */
+
+.doc-section {
+  padding: 60px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Content wrapper */
+.doc-content {
+  max-width: 100%;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: #374151;
+  line-height: 1.7;
+}
+
+/* Main Headings */
+.doc-heading {
+  color: var(--accent-teal);
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 14px;
+}
+
+/* Sub headings */
+.doc-subheading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.doc-content p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 14px;
+  max-width: 860px;
+}
+
+/* Lists */
+.doc-content ul,
+.doc-content ol {
+  margin: 12px 0 20px 22px;
+  padding-left: 18px;
+  max-width: 860px;
+}
+
+.doc-content li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #4b5563;
+}
+
+/* Strong text */
+.doc-content strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Inline code */
+.doc-content code {
+  background: #f3f4f6;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+/* Highlight block for WHY sections */
+.doc-note {
+  border-left: 4px solid var(--accent-teal);
+  padding: 12px 16px;
+  margin: 18px 0 24px;
+  max-width: 900px;
+  background: #f8fafc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .doc-heading {
+    font-size: 24px;
+  }
+
+  .doc-subheading {
+    font-size: 18px;
+  }
+
+  .doc-content p,
+  .doc-content ul,
+  .doc-note {
+    max-width: 100%;
+  }
+}
