@@ -18,31 +18,37 @@
 
 <!-- ================= NAVBAR ================= -->
 <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <div class="nav-brand">
-      <h2>Megabit Lab</h2>
-    </div>
+        <div class="container">
+            <div class="logo hex-logo">
+  <div class="hex">MB</div>
+  <span>Megabit Lab</span>
+</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="nav-item dropdown">
+    <a href="#" class="dropdown-toggle">
+        Products <i class="fas fa-chevron-down"></i>
+    </a>
 
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-
-      <li class="nav-item dropdown">
-        <a href="#" class="dropdown-toggle">
-          Products <i class="fas fa-chevron-down"></i>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="products.html">JavaCP</a></li>
-          <li><a href="fix-file-permissions.html" class="active">
-             Fix File Permissions Tool
-          </a></li>
-        </ul>
-      </li>
-
-      <li><a href="contact.html">Contact</a></li>
+    <ul class="dropdown-menu">
+        <li><a href="java.html">JavaCP</a></li>
+        <li><a href="fix-file-permissions.html">Fix File Permissions Tool</a></li>
+        <li><a href="advance-disk.html">advance-Disk</a></li>
+        <li><a href="wizard.html"> Security Wizard</a></li>
     </ul>
-  </div>
-</nav>
+</li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 <!-- =============== END NAVBAR =============== -->
 
 
@@ -60,21 +66,9 @@
 
 
 <!-- ================= CONTENT ================= -->
-<section class="features">
-  <div class="container">
-
-    <!-- Intro -->
-    <div class="info-box">
-      <h2> What Is This Tool?</h2>
-      <p>
-        The <strong>Fix File Permissions Tool</strong> is a built-in cPanel utility
-        that automatically detects and corrects incorrect permissions for website,
-        email, and system files.
-      </p>
-    </div>
 
     <!-- Why -->
-    <section id="features" class="features">
+    <section id="features" class="ap">
         <div class="container">
             <h2 class="section-title">Why Is This Tool Needed ?</h2>
             <div class="features-grid">
@@ -110,19 +104,25 @@ With one click, the tool scans and fixes everything automatically.</p>
 
 
     <!-- What it fixes -->
-    
-    <!-- After Fix -->
-    <div class="info-box success">
-      <h2>🔁 What Happens After Fixing?</h2>
-      <ul class="icon-list success">
-        <li><i class="fas fa-check-circle"></i> Website loads correctly</li>
-        <li><i class="fas fa-check-circle"></i> Email works normally</li>
-        <li><i class="fas fa-check-circle"></i> Files remain secure</li>
-        <li><i class="fas fa-check-circle"></i> Permission errors resolved</li>
+     <section class="after-fix-section"></section>
+  <div class="container">
+    <div class="after-fix-content">
+      <h2>What Happens After Fixing?</h2>
+
+      <ul>
+        <li>Website loads correctly</li>
+        <li>Email works normally</li>
+        <li>Files remain secure</li>
+        <li>Permission errors resolved</li>
       </ul>
     </div>
+  </div>
+</section>
 
-    <section id="javacp-intro" class="javacp-intro">
+    <!-- After Fix -->
+    
+
+    <section id="javacp-intro" class="product-intro">
         <div class="container">
             <div class="javacp-content">
                 <div class="javacp-text">
@@ -393,18 +393,48 @@ Automatically scan and fix file & folder permissions in your cPanel account </h2
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
-  <div class="container">
-    <div class="footer-bottom">
-      <p>
-        &copy; 2024 Megabit Lab – Mediastroke Web Services Private Limited.
-        All rights reserved.
-      </p>
-    </div>
-  </div>
-</footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Company Details</h3>
+                    <p><strong>Megabit Lab</strong></p>
+                    <p><strong>Mediastroke Web Services Private Limited</strong></p>
+                    <p>Email: <a href="mailto:support@megabitlab.com">support@megabitlab.com</a></p>
+                    <p>Website: <a href="https://megabitlab.com" target="_blank">megabitlab.com</a></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
 
-<!-- Global JS -->
-<script src="script.js"></script>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Products & Services</h3>
+                    <ul>
+                        <li><a href="products.html">JavaCP</a></li>
+                        <li><a href="fix-file-permissions.html">Fix File Permission Tool</a></li>
+                        <li><a href="advance-disk.html">Advanced Disk</a></li>
+                        <li><a href="wizard.html">Wizard security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Megabit Lab - Mediastroke Web Services Private Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
+

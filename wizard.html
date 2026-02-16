@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megabit Lab - Powerful cPanel Plugins for Modern Hosting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="wizard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+
+    <!-- BRAND LOGO -->
+    <div class="logo hex-logo">
+  <div class="hex">MB</div>
+  <span>Megabit Lab</span>
+</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="nav-item dropdown">
+    <a href="#" class="dropdown-toggle">
+        Products <i class="fas fa-chevron-down"></i>
+    </a>
+
+    <ul class="dropdown-menu">
+        <li><a href="java.html">JavaCP</a></li>
+        <li><a href="fix-file-permissions.html">Fix File Permissions Tool</a></li>
+        <li><a href="advance-disk.html">Advance Disk Usage</a></li>
+        <li><a href="wizard.html"> Security Wizard</a></li>
+    </ul>
+</li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+ 
+
+  <!-- HERO -->
+  <section class="hero">
+  <div class="container center">
+    <h1>Security Wizard</h1>
+    <p>
+      Security Wizard is an intelligent, automation-driven cPanel plugin that
+      simplifies domain redirection management while significantly strengthening
+      WordPress security through controlled, server-level rule enforcement.
+    </p>
+    <p>
+      It eliminates the need for manual configuration and reduces the risk of
+      misconfigured redirects or insecure WordPress installations by applying
+      best-practice rules safely and consistently.
+    </p>
+  </div>
+</section>
+
+
+  <!-- OVERVIEW -->
+  <section class="section">
+  <div class="container">
+    <h2>Overview</h2>
+    <p>
+      Managing website redirections and WordPress security typically requires
+      direct edits to the <code>.htaccess</code> file — a process that is both
+      error-prone and risky for non-technical users. Even a small mistake can
+      result in broken websites, redirect loops, or complete service downtime.
+    </p>
+    <p>
+      Security Wizard removes this complexity by providing a guided, structured
+      interface that applies redirection and security rules automatically while
+      maintaining full control over server integrity.
+    </p>
+    <p>
+      The tool is deeply integrated with cPanel’s UAPI system, ensuring accurate
+      domain detection, safe execution, and compliance with hosting environment
+      constraints.
+    </p>
+  </div>
+</section>
+
+
+  <!-- WHAT USERS CAN DO -->
+  <section class="section">
+  <div class="container">
+    <h2>What This Tool Allows Users To Do</h2>
+
+    <p>
+      Security Wizard empowers both administrators and end users to apply
+      production-grade server rules without requiring command-line access or
+      manual configuration.
+    </p>
+
+    <ul class="list">
+      <li>
+        Apply domain redirection rules to enforce consistent URL structures
+        across websites
+      </li>
+      <li>
+        Enable essential WordPress security protections with a single action
+      </li>
+      <li>
+        Automatically manage and update <code>.htaccess</code> rules without
+        overwriting existing configurations
+      </li>
+      <li>
+        Create automatic backups before any configuration change is applied
+      </li>
+    </ul>
+
+    <p>
+      These capabilities ensure safer deployments, faster configuration, and
+      reduced dependency on manual server management.
+    </p>
+  </div>
+</section>
+
+
+  <!-- KEY FEATURES -->
+  <section class="section">
+  <div class="container">
+    <h2>Key Features</h2>
+
+    <h3 class="subheading">1. Dynamic Domain Detection</h3>
+    <p>
+      Security Wizard dynamically fetches all domains associated with the cPanel
+      account using UAPI, eliminating the risk of applying rules to incorrect
+      paths or document roots.
+    </p>
+
+    <ul class="list">
+      <li>Main domain associated with the account</li>
+      <li>Addon domains configured under the account</li>
+      <li>All active subdomains</li>
+    </ul>
+
+    <h3 class="subheading">2. Redirection Options</h3>
+    <p>
+      The tool provides standardized redirection options that cover the most
+      common SEO and security requirements.
+    </p>
+
+    <ul class="list">
+      <li>domain.com (remove www)</li>
+      <li>www.domain.com</li>
+      <li>https://domain.com</li>
+      <li>https://www.domain.com</li>
+    </ul>
+
+    <p>
+      Each rule is implemented using <strong>Apache mod_rewrite</strong>,
+      enforced as a <strong>301 permanent redirect</strong>, and automatically
+      replaces outdated rules to prevent redirect chains and conflicts.
+    </p>
+  </div>
+</section>
+
+  <!-- HTACCESS BACKUP -->
+  <section class="section">
+  <div class="container">
+    <h2>Automatic .htaccess Backup</h2>
+
+    <p>
+      To protect existing configurations, Security Wizard performs a complete
+      validation and backup process before modifying the <code>.htaccess</code>
+      file.
+    </p>
+
+    <ul class="list">
+      <li>Verifies whether <code>.htaccess</code> exists in the document root</li>
+      <li>Creates a one-time backup file named <code>.htaccess.backup-first</code></li>
+      <li>Ensures the backup file remains readable and untouched</li>
+      <li>Applies secure file permissions (0644)</li>
+    </ul>
+
+    <p>
+      This approach guarantees that administrators can safely roll back changes
+      and prevents irreversible configuration loss.
+    </p>
+  </div>
+</section>
+
+
+  <!-- WORDPRESS SECURITY -->
+  <section class="section">
+  <div class="container">
+    <h2>WordPress Security Features</h2>
+
+    <p>
+      Security Wizard includes multiple WordPress hardening rules designed to
+      block common attack vectors without affecting site functionality.
+    </p>
+
+    <ul class="list">
+      <li>
+        <strong>Block xmlrpc.php</strong> – prevents brute-force and amplification
+        attacks targeting XML-RPC endpoints
+      </li>
+      <li>
+        <strong>Protect .htaccess / .htpasswd</strong> – blocks public access to
+        sensitive server configuration files
+      </li>
+      <li>
+        <strong>Disable directory browsing</strong> – prevents exposure of file
+        listings to visitors
+      </li>
+      <li>
+        <strong>Block sensitive WordPress files</strong> such as:
+        <ul class="list nested">
+          <li>wp-config.php</li>
+          <li>readme.html</li>
+          <li>license.txt</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Basic bot protection</strong> – blocks suspicious user agents
+        commonly associated with automated scanning
+      </li>
+    </ul>
+  </div>
+</section>
+
+ <section class="section">
+  <div class="container">
+    <h2>Workflow</h2>
+
+    <p>
+      Security Wizard follows a structured execution flow to ensure accuracy,
+      safety, and predictable results.
+    </p>
+
+    <div class="workflow">
+      <div class="step"><span>1</span><p>User selects the target domain.</p></div>
+      <div class="step"><span>2</span><p>User chooses the required redirection type.</p></div>
+      <div class="step"><span>3</span><p>User enables desired WordPress security protections.</p></div>
+      <div class="step"><span>4</span><p>User applies the configuration.</p></div>
+      <div class="step">
+        <span>5</span>
+        <p>
+          The tool validates paths, creates backups, removes outdated rules,
+          applies new configurations, updates permissions, and confirms success.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- SECURITY MEASURES -->
+  <section class="section">
+    <div class="container">
+      <h2>Security Measures Implemented</h2>
+      <ul class="list">
+        <li>Prevents duplicate rule insertion</li>
+        <li>Uses named comment blocks for safe rule removal</li>
+        <li>Ensures controlled rewrite rule placement</li>
+        <li>Validates document root before execution</li>
+        <li>Applies secure file permissions (0644)</li>
+        <li>Blocks unauthorized file access</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="section">
+  <div class="container">
+    <h2>Advantages</h2>
+
+    <p>
+      Security Wizard delivers immediate operational benefits for hosting
+      providers, administrators, and end users.
+    </p>
+
+    <ul class="list">
+      <li>Eliminates manual server configuration tasks</li>
+      <li>Reduces configuration errors and downtime risk</li>
+      <li>Improves WordPress security instantly</li>
+      <li>Saves administrative time</li>
+      <li>Provides a clean, beginner-friendly interface</li>
+      <li>Ensures organized and maintainable rule blocks</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- CONCLUSION -->
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Company Details</h3>
+                    <p><strong>Megabit Lab</strong></p>
+                    <p><strong>Mediastroke Web Services Private Limited</strong></p>
+                    <p>Email: <a href="mailto:support@megabitlab.com">support@megabitlab.com</a></p>
+                    <p>Website: <a href="https://megabitlab.com" target="_blank">megabitlab.com</a></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Products & Services</h3>
+                    <ul>
+                        <li><a href="products.html">JavaCP</a></li>
+                        <li><a href="fix-file-permissions.html">Fix File Permission Tool</a></li>
+                        <li><a href="advance-disk.html">Advanced Disk</a></li>
+                        <li><a href="wizard.html">Wizard security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Megabit Lab - Mediastroke Web Services Private Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

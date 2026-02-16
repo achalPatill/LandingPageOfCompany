@@ -20,6 +20,8 @@
     --border-color: #e2e8f0;
     --shadow: rgba(0, 0, 0, 0.08);
     --shadow-hover: rgba(0, 0, 0, 0.12);
+    --section-space: 30px;
+
 }
 
 html {
@@ -32,7 +34,10 @@ body {
     color: var(--text-dark);
     background-color: var(--bg-white);
     overflow-x: hidden;
+    padding-top: 64px; /* same as navbar height */
 }
+
+
 
 .container {
     max-width: 1200px;
@@ -48,7 +53,9 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px var(--shadow);
-    border-bottom: 1px solid var(--border-color);
+    
+
+
 }
 
 .navbar .container {
@@ -214,18 +221,20 @@ body {
     margin-right: auto;
     line-height: 1.8;
 }
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px; /* controlled spacing */
+}
 
 .btn-primary {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    background: var(--primary-color);
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+  background: #2563eb;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .btn-primary:hover {
@@ -1122,7 +1131,7 @@ section {
 /* JavaCP Intro Section */
 .javacp-intro {
     background: var(--bg-dark);
-    border-bottom: 1px solid var(--border-color);
+  
 }
 
 .javacp-content {
@@ -1193,6 +1202,9 @@ section {
     border-radius: 10px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
     border: 1px solid var(--border-color);
+}
+.section-title::before {
+  display: none;
 }
 
 /* Who Section */
@@ -2076,7 +2088,6 @@ code {
 }
 .navbar {
   background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
   z-index: 1000;
 }
 
@@ -2108,7 +2119,7 @@ code {
 }
 
 .dropdown-menu li {
-  padding: 10px 15px;
+  padding: 6px 15px;
 }
 
 .dropdown-menu a {
@@ -2235,4 +2246,186 @@ code {
 
 .page-hero p {
   margin-top: 10px;
+}
+
+.section-title {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+/* =========================
+   GLOBAL BORDER RESET
+   ========================= */
+
+/* Remove borders from ALL elements */
+*,
+*
+
+/* Remove shadows that look like borders */
+.navbar,
+.hero,
+.page-hero,
+section,
+footer {
+    box-shadow: none !important;
+}
+/* HERO SECTION */
+.hero {
+  padding: 80px 0 32px;
+}
+
+/* SECTION AFTER HERO */
+#features {
+  padding-top: 32px;
+}
+
+/* SECTION TITLE */
+.section-title,
+.doc-heading {
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 64px 0 24px;
+  }
+}
+/* Remove only divider lines */
+.hero,
+.page-hero,
+.navbar,
+section {
+  border-bottom: none !important;
+}
+.hero,
+.about,
+.products,
+.services,
+.testimonials,
+.contact,
+.features,
+.who-section,
+.reliability,
+.values {
+  border-bottom: 1px solid var(--border-color);
+}
+body {
+  background: #ffffff;
+}
+.hero,
+.about,
+.products,
+.services,
+.testimonials,
+.contact,
+.features,
+.who-section,
+.reliability,
+.values {
+  padding: 5rem 0;
+}
+/* REMOVE SECTION DIVIDER LINES ONLY */
+.hero,
+.page-hero,
+.about,
+.products,
+.services,
+.testimonials,
+.contact,
+.features,
+.who-section,
+.reliability,
+.values,
+.products-showcase,
+.javacp-section {
+    border-bottom: none !important;
+}
+.navbar .nav-menu .dropdown-menu li {
+  padding: 7px 15px !important;
+}
+
+.navbar .nav-menu .dropdown-menu a {
+  line-height: 1.2 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .container {
+  position: relative;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+section{
+  padding: 30px 0;
+}
+/* =========================
+   GLOBAL SECTION SPACING FIX
+========================= */
+
+section {
+  padding-top: var(--section-space) !important;
+  padding-bottom: var(--section-space) !important;
+}
+.shield-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+}
+
+.shield {
+  width: 44px;
+  height: 50px;
+  background: linear-gradient(135deg, #0f766e, #0891b2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(
+    50% 0%, 90% 15%, 90% 55%,
+    50% 100%, 10% 55%, 10% 15%
+  );
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 80px;          /* 👈 increase this */
+  width: 180px;
+  max-height: 100%;
+  display: block;
+}
+.hex-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+}
+
+.hex {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #0f172a, #2563eb);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(
+    25% 6%, 75% 6%,
+    100% 50%, 75% 94%,
+    25% 94%, 0% 50%
+  );
+  font-size: 20px;
 }

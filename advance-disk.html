@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megabit Lab - Powerful cPanel Plugins for Modern Hosting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="advance-disk.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <div class="logo hex-logo">
+  <div class="hex">MB</div>
+  <span>Megabit Lab</span>
+</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="nav-item dropdown">
+    <a href="#" class="dropdown-toggle">
+        Products <i class="fas fa-chevron-down"></i>
+    </a>
+
+    <ul class="dropdown-menu">
+        <li><a href="java.html">JavaCP</a></li>
+        <li><a href="fix-file-permissions.html">Fix File Permissions Tool</a></li>
+        <li><a href="advance-disk.html">Advance Disk Usage</a></li>
+        <li><a href="wizard.html">Security Wizard</a></li>
+    </ul>
+</li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+  <!-- HEADER -->
+  <section>
+  <div class="container-narrow hero-center">
+    <h1>Advanced Disk Usage</h1>
+    <p class="hero-text">
+      Advanced Disk Usage is a custom-developed cPanel extension designed to provide a
+      detailed, interactive, and sortable visualization of disk usage within a user's
+      home directory.
+    </p>
+  </div>
+</section>
+
+
+  <!-- DIFFERENTIATION -->
+  <section class="content">
+  <div class="container ">
+
+    <h2>How It Improves Over Default cPanel Disk Usage</h2>
+
+    <p>
+      The default cPanel Disk Usage tool provides a high-level overview of storage
+      consumption but lacks precision and actionable insights.
+    </p>
+
+    <p>
+      Advanced Disk Usage enhances visibility by scanning directory structures in
+      greater detail, helping administrators and users identify exact storage
+      bottlenecks.
+    </p>
+
+    <p><strong>Key improvements include:</strong></p>
+
+    <ul class="doc-list">
+      <li>
+        Accurate recursive directory scanning instead of approximate size estimates
+      </li>
+      <li>
+        Clear visibility into deeply nested folders and hidden directories
+      </li>
+      <li>
+        Faster identification of abnormal disk usage patterns
+      </li>
+      <li>
+        Ability to exclude system-critical paths from scans
+      </li>
+      <li>
+        Reliable results even for large accounts with extensive file counts
+      </li>
+    </ul>
+
+    <p>
+      These enhancements allow users to take corrective actions confidently without
+      relying on command-line tools or guesswork.
+    </p>
+
+  </div>
+</section>
+
+  </section><!-- ================= INSIGHT SECTION ================= -->
+<section class="insight-section">
+  <div class="container insight-grid">
+
+    <!-- LEFT: STATS -->
+    <div class="insight-stats">
+      <h3 class="insight-title">How does it help users?</h3>
+
+      <div class="stat-item">
+        <span class="stat-value">70%</span>
+        <span class="stat-text">Faster identification of large directories</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-value">42%</span>
+        <span class="stat-text">Reduction in disk-related troubleshooting time</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-value">100%</span>
+        <span class="stat-text">Visibility into actual disk consumption</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CAPABILITIES -->
+    <div class="insight-content">
+      <h3 class="insight-title">
+        Core capabilities of Advanced Disk Usage
+      </h3>
+
+      <div class="capability-list">
+
+        <div class="capability">
+          <i class="fas fa-sitemap"></i>
+          <div>
+            <h4>Recursive Disk Usage Calculation</h4>
+            <p>
+              Calculates total directory size including all nested files and subdirectories,
+              providing accurate storage consumption data.
+            </p>
+          </div>
+        </div>
+
+        <div class="capability">
+          <i class="fas fa-sort-amount-down"></i>
+          <div>
+            <h4>Sort by Disk Usage</h4>
+            <p>
+              Allows sorting directories in descending order to quickly identify
+              large folders consuming excessive disk space.
+            </p>
+          </div>
+        </div>
+
+        <div class="capability">
+          <i class="fas fa-folder-tree"></i>
+          <div>
+            <h4>Expand / Collapse Tree Navigation</h4>
+            <p>
+              Interactive folder tree with expand and collapse functionality for
+              simplified navigation of complex directory structures.
+            </p>
+          </div>
+        </div>
+
+        <div class="capability">
+          <i class="fas fa-shield-alt"></i>
+          <div>
+            <h4>Secure cPanel Integration</h4>
+            <p>
+              Built using cp_security_token and UAPI, ensuring secure access
+              without executing direct system commands.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- USER CAPABILITIES -->
+  <section class="content">
+  <div class="container">
+
+    <h2>User Capabilities</h2>
+
+    <p>
+      Advanced Disk Usage is designed to give users complete visibility into
+      how disk space is allocated across their hosting account. Instead of
+      relying on estimated values, users are presented with accurate,
+      real-time disk usage data.
+    </p>
+
+    <p>
+      The interface is optimized for clarity and ease of use, allowing both
+      technical and non-technical users to quickly identify storage-heavy
+      directories and take corrective action when required.
+    </p>
+
+    <p><strong>Using Advanced Disk Usage, users can:</strong></p>
+
+    <ul class="doc-list">
+      <li>
+        View actual disk usage for files and directories within their home
+        directory
+      </li>
+      <li>
+        Identify large folders that contribute significantly to disk quota
+        consumption
+      </li>
+      <li>
+        Navigate deeply nested directory structures using an interactive
+        expand and collapse tree view
+      </li>
+      <li>
+        Sort directories by disk usage to quickly locate problem areas
+      </li>
+      <li>
+        Open selected directories directly in the cPanel File Manager for
+        immediate cleanup or inspection
+      </li>
+      <li>
+        Understand how disk space is distributed across domains, mail
+        directories, and application data
+      </li>
+      <li>
+        Monitor disk usage growth patterns to prevent future quota issues
+      </li>
+      <li>
+        Return seamlessly to the cPanel dashboard without interrupting
+        workflow
+      </li>
+    </ul>
+
+    <p>
+      By presenting storage information in a structured and actionable
+      format, Advanced Disk Usage enables users to make informed decisions
+      about resource management and avoid unexpected disk limit violations.
+    </p>
+
+    <p>
+      This level of visibility reduces dependency on support teams and
+      encourages proactive storage maintenance, resulting in a smoother
+      hosting experience.
+    </p>
+
+  </div>
+</section>
+
+  <!-- CORE CAPABILITIES (STRUCTURE PRESERVED) -->
+  
+
+  <!-- WORKFLOW -->
+  <section class="content workflow">
+  <div class="container">
+    <h2>Workflow</h2>
+
+    <div class="workflow-steps">
+
+      <div class="workflow-step">
+        <div class="step-icon"><i class="fas fa-plug"></i></div>
+        <div class="step-content">
+          <h4>Launch from cPanel</h4>
+          <p>User opens the Advanced Disk Usage plugin directly from cPanel.</p>
+        </div>
+      </div>
+
+      <div class="workflow-step">
+        <div class="step-icon"><i class="fas fa-folder-open"></i></div>
+        <div class="step-content">
+          <h4>Fetch Home Directory</h4>
+          <p>The plugin securely retrieves the user’s home directory.</p>
+        </div>
+      </div>
+
+      <div class="workflow-step">
+        <div class="step-icon"><i class="fas fa-calculator"></i></div>
+        <div class="step-content">
+          <h4>Recursive Disk Analysis</h4>
+          <p>Disk usage is calculated recursively across all files and subdirectories.</p>
+        </div>
+      </div>
+
+      <div class="workflow-step">
+        <div class="step-icon"><i class="fas fa-sitemap"></i></div>
+        <div class="step-content">
+          <h4>Render Directory Tree</h4>
+          <p>An interactive directory tree is displayed for easy navigation.</p>
+        </div>
+      </div>
+
+      <div class="workflow-step">
+        <div class="step-icon"><i class="fas fa-mouse-pointer"></i></div>
+        <div class="step-content">
+          <h4>User Interaction</h4>
+          <p>Users expand folders, sort by size, open File Manager, or return to dashboard.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- TESTING -->
+ <section class="content testing">
+  <div class="container">
+    <h2>Testing & Validation</h2>
+
+    <p class="section-intro">
+      Advanced Disk Usage has been validated across real-world hosting environments
+      to ensure accuracy, performance, and stability.
+    </p>
+
+    <div class="testing-grid">
+
+      <div class="test-item">
+        <i class="fas fa-folder"></i>
+        <div>
+          <h4>Large Directory Structures</h4>
+          <p>
+            Tested with accounts containing tens of thousands of files to verify
+            accurate recursive size calculation.
+          </p>
+        </div>
+      </div>
+
+      <div class="test-item">
+        <i class="fas fa-code-branch"></i>
+        <div>
+          <h4>Deep Nested Folders</h4>
+          <p>
+            Validated against deeply nested directory trees without performance
+            degradation or timeouts.
+          </p>
+        </div>
+      </div>
+
+      <div class="test-item">
+        <i class="fas fa-file-alt"></i>
+        <div>
+          <h4>Mixed File Types</h4>
+          <p>
+            Tested with binary files, logs, archives, and application data
+            to ensure consistent size detection.
+          </p>
+        </div>
+      </div>
+
+      <div class="test-item">
+        <i class="fas fa-globe"></i>
+        <div>
+          <h4>Multi-Domain Environments</h4>
+          <p>
+            Verified compatibility with main domains, addon domains,
+            and subdomains within a single cPanel account.
+          </p>
+        </div>
+      </div>
+
+      <div class="test-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Mail & System Directories</h4>
+          <p>
+            Safely tested on mail and system directories without exposing
+            sensitive files or breaking mail services.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- ORGANIZATIONAL BENEFITS -->
+  <section class="content">
+  <div class="container">
+
+    <h2>Benefits to the Organization</h2>
+
+    <p>
+      By providing accurate and actionable disk usage insights, Advanced Disk Usage
+      delivers measurable operational and business benefits.
+    </p>
+
+    <p><strong>Organizational advantages include:</strong></p>
+
+    <ul class="doc-list">
+      <li>
+        Reduced support tickets related to disk quota and storage issues
+      </li>
+      <li>
+        Faster issue resolution for hosting administrators and support teams
+      </li>
+      <li>
+        Improved server performance through proactive storage management
+      </li>
+      <li>
+        Better customer satisfaction due to transparent disk usage reporting
+      </li>
+      <li>
+        Lower operational overhead by minimizing manual investigations
+      </li>
+    </ul>
+
+    <p>
+      This leads to a more stable hosting environment while enabling teams to focus
+      on higher-value operational tasks.
+    </p>
+
+  </div>
+</section>
+<footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Company Details</h3>
+                    <p><strong>Megabit Lab</strong></p>
+                    <p><strong>Mediastroke Web Services Private Limited</strong></p>
+                    <p>Email: <a href="mailto:support@megabitlab.com">support@megabitlab.com</a></p>
+                    <p>Website: <a href="https://megabitlab.com" target="_blank">megabitlab.com</a></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Products & Services</h3>
+                    <ul>
+                        <li><a href="products.html">JavaCP</a></li>
+                        <li><a href="fix-file-permissions.html">Fix File Permission Tool</a></li>
+                        <li><a href="advance-disk.html">Advanced Disk</a></li>
+                        <li><a href="wizard.html">Wizard security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Megabit Lab - Mediastroke Web Services Private Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

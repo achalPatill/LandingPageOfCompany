@@ -1,0 +1,181 @@
+/* ===============================
+   RESET & VARIABLES
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --primary: #0891b2;
+}
+
+/* ===============================
+   BASE
+================================ */
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.65;
+}
+
+/* ===============================
+   CONTAINERS
+   (ONLY horizontal padding here)
+================================ */
+
+/* Matches Megabit Lab alignment */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Wizard / centered product pages */
+.container-narrow {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ===============================
+   SECTIONS
+   (ONLY vertical spacing here)
+================================ */
+.section {
+  padding: 20px 0;
+}
+
+/* ===============================
+   HERO
+================================ */
+.hero {
+  padding-top: 120px; /* fixed navbar offset */
+  padding-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  color: var(--text-muted);
+}
+
+/* ===============================
+   HEADINGS & TEXT
+================================ */
+.section h2 {
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   SUBHEADINGS
+================================ */
+.subheading {
+  font-size: 1.15rem;
+  margin: 16px 0 8px;
+  color: var(--text-main);
+}
+
+/* ===============================
+   LISTS
+================================ */
+.list {
+  margin: 8px 0 12px 18px;
+}
+
+.list li {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  color: #374151;
+}
+
+.list.nested {
+  margin-top: 6px;
+}
+
+/* ===============================
+   WORKFLOW / STEPS
+================================ */
+.workflow {
+  display: grid;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.step span {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.step p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .container,
+  .container-narrow {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+
+  .section p,
+  .list li,
+  .step p {
+    font-size: 1rem;
+  }
+}
